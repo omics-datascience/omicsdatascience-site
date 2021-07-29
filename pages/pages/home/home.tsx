@@ -15,7 +15,7 @@ export default function Home() {
     <Box>
       <Container className={styles.firstContainer} maxWidth={false}>
         <Grid container spacing={2}>
-          <Grid item xs={4}>
+          <Grid item xs={12} md={4}>
             <Typography variant="h6" align="center" paragraph>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -26,7 +26,7 @@ export default function Home() {
               sunt in culpa qui officia deserunt mollit anim id est laborum
             </Typography>
           </Grid>
-          <Grid item xs={8}>
+          <Grid item xs={12} md={8}>
             <CarouselComponent items={images} />
           </Grid>
         </Grid>

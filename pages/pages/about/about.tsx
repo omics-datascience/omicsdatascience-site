@@ -43,7 +43,7 @@ function renderTeam(team: any) {
   team.forEach((member: any) => {
     members.push(
       <React.Fragment>
-        <Grid item xs={4}>
+        <Grid item xs={6} md={4}>
           <CardContent className={styles.cardContent}>
             <ListItem alignItems="flex-start">
               <ListItemAvatar>
