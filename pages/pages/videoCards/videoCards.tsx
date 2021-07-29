@@ -26,7 +26,7 @@ export default function VideoCards() {
 
 function createVideoCard(title: string, description: string, url: string) {
   return (
-    <Grid item xs={12} sm={12} md={7} lg={6} justify="center">
+    <Grid item xs={12} sm={12} md={7} lg={6}>
       <Card className={styles.card} raised={true}>
         <CardActionArea>
           <CardMedia

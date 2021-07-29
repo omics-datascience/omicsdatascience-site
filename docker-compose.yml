@@ -1,18 +1,9 @@
 version: "3"
 services:
-  bioplat:
-    container_name: bioplat
-    image: bioplat
+  web:
+    container_name: omicsdatascienceweb
+    image: omicsdatascience-site
     build: .
     ports:
       - 3000:3000
     restart: always
-    links:
-      - database
-
-  database:
-    container_name: mongo
-    image: mongo:5.0.0
-    restart: always
-    volumes:
-      - /mongo/bioplat:/data/bioplatdb

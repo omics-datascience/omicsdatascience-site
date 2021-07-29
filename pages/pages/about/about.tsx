@@ -10,7 +10,6 @@ import {
   ListItem,
   ListItemAvatar,
   ListItemText,
-  makeStyles,
   Typography,
 } from "@material-ui/core";
 import FaceIcon from "@material-ui/icons/Face";
@@ -23,19 +22,6 @@ import BookIcon from "@material-ui/icons/Book";
 import BusinessIcon from "@material-ui/icons/Business";
 import team from "./team.json";
 
-const pageStyles = makeStyles(() => ({
-  institutionsText: {
-    maxWidth: "80%",
-  },
-  institution: {
-    justifyContent: "flex-start",
-    alignItems: "flex-end",
-    marginLeft: "5px",
-    width: "100%",
-    marginRight: "0px !important",
-    display: "flex",
-  },
-}));
 export default function About() {
   return (
     <Container>
@@ -125,10 +111,9 @@ function renderTeam(team: any) {
 }
 
 function renderInstitutions() {
-  const classes = pageStyles();
   return (
     <CardContent>
-      <Typography variant="h5" className={classes.institutionsText}>
+      <Typography variant="h5" className={styles.institutionsText}>
         Multiomix is the result of interdisciplinary work between members of the
         following scientific institutions:
       </Typography>
@@ -138,7 +123,7 @@ function renderInstitutions() {
 
           <Typography
             variant="h6"
-            className={classes.institution}
+            className={styles.institution}
             gutterBottom={false}
           >
             CAETI - Universidad Abierta Interamericana
@@ -147,13 +132,13 @@ function renderInstitutions() {
         <ListItem>
           <BusinessIcon />
 
-          <Typography variant="h6" className={classes.institution}>
+          <Typography variant="h6" className={styles.institution}>
             CINIBA - Faculty of Medical Sciences - UNLP
           </Typography>
         </ListItem>
         <ListItem>
           <BusinessIcon />
-          <Typography variant="h6" className={classes.institution}>
+          <Typography variant="h6" className={styles.institution}>
             LIDI - Faculty of Informatics - UNLP
           </Typography>
         </ListItem>

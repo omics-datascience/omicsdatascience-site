@@ -31,3 +31,15 @@
   justify-content: center;
   font-weight: bold;
 }
+
+.institutionsText {
+  max-width: "80%";
+}
+.institution {
+  justify-content: "flex-start";
+  align-items: "flex-end";
+  margin-left: "5px";
+  width: "100%";
+  margin-right: "0px !important";
+  display: "flex";
+}

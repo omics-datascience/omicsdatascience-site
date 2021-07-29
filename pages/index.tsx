@@ -12,9 +12,6 @@ import {
   Toolbar,
   Typography,
   Container,
-  SvgIcon,
-  Box,
-  Tooltip,
 } from "@material-ui/core";
 import {
   SwipeableDrawer,
