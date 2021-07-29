@@ -1,0 +1,17 @@
+.firstContainer {
+  background-color: black;
+  color: white;
+  color: "#fff";
+  width: "100%";
+  max-width: "100%";
+  padding-top: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.secondContainer {
+  padding-top: 50px;
+  width: "100%";
+  max-width: "100%";
+  margin-left: 0px;
+  margin-right: 0px;
+}

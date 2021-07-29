@@ -1,9 +1,9 @@
 .media {
   height: 100%;
   min-height: 300px;
+  border: none;
 }
 .card {
-  width: 500px;
   margin: 10px;
   margin-left: 0px;
 }

@@ -9,7 +9,7 @@ import { getYouTubeEmbededUrl } from "../../../utils/FormattingUtils";
 import { Grid } from "@material-ui/core";
 export default function VideoCards() {
   return (
-    <div>
+    <Grid container spacing={1} alignContent="center" justify="center">
       {createVideoCard(
         "Why use bioplat 2?",
         "placeholder",
@@ -20,39 +20,37 @@ export default function VideoCards() {
         "placeholder",
         getYouTubeEmbededUrl("PBetqVkMYTI")
       )}
-    </div>
+    </Grid>
   );
 }
 
 function createVideoCard(title: string, description: string, url: string) {
   return (
-    <Grid
-      container
-      spacing={0}
-      direction="column"
-      alignItems="center"
-      justify="center"
-    >
-      <Grid item lg={3}>
-        <Card className={styles.card} raised={true} variant="outlined">
-          <CardActionArea>
-            <CardMedia
-              className={styles.media}
-              component="iframe"
-              src={url}
-              title="Why use bioplat"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                {title}
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                {description}
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      </Grid>
+    <Grid item xs={12} sm={12} md={7} lg={6} justify="center">
+      <Card className={styles.card} raised={true}>
+        <CardActionArea>
+          <CardMedia
+            className={styles.media}
+            component="iframe"
+            src={url}
+            title={title}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              {title}
+            </Typography>
+            {showPlaceholder(description)}
+          </CardContent>
+        </CardActionArea>
+      </Card>
     </Grid>
   );
+}
+
+function showPlaceholder(description: String) {
+  if (description !== "") {
+    <Typography variant="body2" color="textSecondary" component="p">
+      {description}
+    </Typography>;
+  }
 }

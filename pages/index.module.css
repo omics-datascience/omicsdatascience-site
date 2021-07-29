@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.underconstructionImage {
+  margin-right: 3px !important;
+  padding-top: 30px !important;
+}
+.main {
+  min-height: 1170px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  width: 90%;
+  height: 50px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  padding-top: 10px;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.appbar {
+  width: auto;
+  float: left;
+  z-index: 2000 !important;
+}
+
+.toolbar {
+  background-color: black;
+}
+
+.list {
+  width: 250px;
+  margin-top: 64px;
+}

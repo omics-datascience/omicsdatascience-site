@@ -1,13 +1,16 @@
-import React from "react";
 import Carousel from "react-material-ui-carousel";
 import Image from "next/image";
+import { Container } from "@material-ui/core";
+
 export default function CarouselComponent(props: any) {
   return (
-    <Carousel>
-      {props.items.map((item: string, i: number) => (
-        <Item key={i} item={item} />
-      ))}
-    </Carousel>
+    <Container>
+      <Carousel>
+        {props.items.map((item: string, i: number) => (
+          <Item key={i} item={item} />
+        ))}
+      </Carousel>
+    </Container>
   );
 }
 
@@ -17,8 +20,8 @@ function Item(props: any) {
       id={props.keydown}
       src={props.item}
       layout="responsive"
-      height={700}
-      width={700}
+      height={50}
+      width={81}
       alt=""
     ></Image>
   );

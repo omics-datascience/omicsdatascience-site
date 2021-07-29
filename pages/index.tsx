@@ -1,14 +1,20 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import styles from "./index.module.css";
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import HomeIcon from "@material-ui/icons/Home";
+import DuplicateIcon from "@material-ui/icons/Info";
+import AccessIcon from "@material-ui/icons/VpnKey";
+import HelpIcon from "@material-ui/icons/Help";
 import {
   IconButton,
   AppBar,
   Toolbar,
   Typography,
   Container,
+  SvgIcon,
+  Box,
+  Tooltip,
 } from "@material-ui/core";
 import {
   SwipeableDrawer,
@@ -18,72 +24,19 @@ import {
   ListItemText,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
 import { useState } from "react";
 import About from "./pages/about/about";
-import Multiomics from "./pages/multiomics/multiomics";
 import Home from "./pages/home/home";
 import GetAccess from "./pages/getaccess/getaccess";
 import Support from "./pages/support/support";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
-  list: {
-    width: 250,
-    marginTop: 64,
-  },
-  icon: {
-    marginRight: theme.spacing(2),
-  },
-  heroContent: {
-    backgroundColor: "#424242",
-    color: "#fff",
-  },
-  mainContainer: {
-    minHeight: "1170px",
-    backgroundColor: "#fffff",
-  },
-  heroButtons: {
-    marginTop: theme.spacing(4),
-  },
-  cardGrid: {
-    paddingTop: theme.spacing(8),
-    paddingBottom: theme.spacing(8),
-  },
-  card: {
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
-  },
-  cardMedia: {
-    paddingTop: "56.25%", // 16:9
-  },
-  cardContent: {
-    flexGrow: 1,
-  },
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6),
-  },
-}));
-
 const pages = [
-  { name: "Bioplat", page: <Home /> },
-  { name: "About us", page: <About /> },
-  { name: "Multiomics", page: <Multiomics /> },
-  { name: "Get access", page: <GetAccess /> },
-  { name: "Support", page: <Support /> },
+  { name: "Home", page: <Home />, icon: <HomeIcon /> },
+  { name: "About us", page: <About />, icon: <DuplicateIcon /> },
+  { name: "Get access", page: <GetAccess />, icon: <AccessIcon /> },
+  { name: "Support", page: <Support />, icon: <HelpIcon /> },
 ];
 export default function IndexPage() {
-  const classes = useStyles();
   const [selectedItem, setSelectedItem] = useState(0);
 
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -102,22 +55,37 @@ export default function IndexPage() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Bioplat</title>
-        <meta name="description" content="Bioplat" />
+        <title>Omics Data Science</title>
+        <meta name="description" content="Omics Data Science" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <AppBar className={styles.appbar} position="sticky">
-        <Toolbar>
+        <Toolbar className={styles.toolbar}>
           <IconButton
             edge="start"
             onClick={toggleFunction(!drawerOpen)}
-            className={classes.menuButton}
             color="inherit"
             aria-label="menu"
           >
             <MenuIcon />
           </IconButton>
+          <Container>
+            <div>
+              <Typography component="h2" variant="h4" align="center">
+                <Image
+                  src="/underconstruction.svg"
+                  alt="Under Construction"
+                  width={60}
+                  height={50}
+                  layout="fixed"
+                  className={styles.underconstructionImage}
+                  title="Under Construction"
+                />
+                Omics Data Science
+              </Typography>
+            </div>
+          </Container>
         </Toolbar>
       </AppBar>
       <SwipeableDrawer
@@ -127,7 +95,7 @@ export default function IndexPage() {
         onOpen={toggleFunction(true)}
       >
         <div
-          className={classes.list}
+          className={styles.list}
           role="presentation"
           onClick={toggleFunction(false)}
           onKeyDown={toggleFunction(false)}
@@ -138,11 +106,9 @@ export default function IndexPage() {
                 button
                 key={item.name}
                 onClick={() => setSelectedItem(index)}
-                divider={index == 2}
+                divider={index == 1}
               >
-                <ListItemIcon>
-                  <InboxIcon />
-                </ListItemIcon>
+                <ListItemIcon>{item.icon}</ListItemIcon>
                 <ListItemText primary={item.name} />
               </ListItem>
             ))}
@@ -150,7 +116,7 @@ export default function IndexPage() {
         </div>
       </SwipeableDrawer>
 
-      <Container className={classes.mainContainer}>
+      <Container maxWidth={false} className={styles.main}>
         {pages[selectedItem].page}
       </Container>
 
@@ -162,7 +128,7 @@ export default function IndexPage() {
         </div>
         <div>
           <Typography gutterBottom variant="h5" component="h3">
-            Footer placeholder
+            Creative Commons
           </Typography>
         </div>
       </footer>

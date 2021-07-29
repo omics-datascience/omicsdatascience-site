@@ -1,74 +1,65 @@
 [
   {
-    "name": "Mst. Matias Butti",
-    "role": "Project Leader",
+    "name": "Dr. MSc. Matias Butti",
+    "role": "Project Coordination",
     "url": "https://www.researchgate.net/profile/Matias_Butti",
     "urlText": "PubMed ResearchGate",
-    "twitter": "https://twitter.com/goncy",
-    "linkedin": "https://ar.linkedin.com/in/agustin-daniel-marraco"
-  },
-  {
-    "name": "Genaro Camele",
-    "role": "Machine Learning",
-    "url": "",
-    "urlText": "",
     "twitter": "",
-    "linkedin": ""
+    "linkedin": "",
+    "email": "matias.butti@gemail.com"
   },
   {
-    "name": "Dr. Sebastián Menazzi",
-    "role": "Médico genetista",
-    "url": "",
-    "urlText": "",
-    "twitter": "",
-    "linkedin": ""
-  },
-  {
-    "name": "David Nastasi",
-    "role": "Bioplat GUI and Bioplat server development",
-    "url": "",
-    "urlText": "",
-    "twitter": "",
-    "linkedin": ""
-  },
-  {
-    "name": "Juan Martín Lichowski",
-    "role": "Bioplat GUI and Bioplat server development",
-    "url": "",
-    "urlText": "",
-    "twitter": "",
-    "linkedin": ""
-  },
-  {
-    "name": "Lic. Diego Martínez",
-    "role": "Bioplat GUI and Bioplat server development",
-    "url": "",
-    "urlText": "",
-    "twitter": "",
-    "linkedin": ""
-  },
-  {
-    "name": "Hernán Chanfreau",
-    "role": "Backend Development",
-    "url": "",
-    "urlText": "",
-    "twitter": "",
-    "linkedin": ""
-  },
-  {
-    "name": "Matías Beccaria",
-    "role": "BioPlat Cloud developer",
-    "url": "",
-    "urlText": "",
-    "twitter": "",
-    "linkedin": ""
-  },
-  {
-    "name": "Dr. Martín C. Abba",
-    "role": "Group Director",
+    "name": "PhD Martín Abba",
+    "role": "Project Coordination",
     "url": "http://www.ncbi.nlm.nih.gov/pubmed?term=Abba%20MC",
     "urlText": "PubMed ResearchGate",
     "twitter": "",
-    "linkedin": ""
+    "linkedin": "",
+    "email": "mcabba@gemail.com"
+  },
+  {
+    "name": "Genaro Camele",
+    "role": "Main Contributor",
+    "url": "",
+    "urlText": "",
+    "twitter": "",
+    "linkedin": "",
+    "email": "genarocamele@gemail.com"
+  },
+  {
+    "name": "Esp. Hernán Chanfreau",
+    "role": "Collaborator",
+    "url": "",
+    "urlText": "",
+    "twitter": "",
+    "linkedin": "",
+    "email": ""
+  },
+  {
+    "name": "Dr. Sebastián Menazzi",
+    "role": "Collaborator",
+    "url": "",
+    "urlText": "",
+    "twitter": "",
+    "linkedin": "",
+    "email": ""
+  },
+  {
+    "name": "St. Agustín Marraco",
+    "role": "Collaborator",
+    "url": "",
+    "urlText": "",
+    "twitter": "https://twitter.com/agusmarraco",
+    "linkedin": "https://ar.linkedin.com/in/agustin-daniel-marraco",
+    "email": "marraco.agustin@gemail.com"
+  },
+  {
+    "name": "PhD. Waldo Hasperué",
+    "role": "Collaborator",
+    "url": "",
+    "urlText": "",
+    "twitter": "",
+    "linkedin": "",
+    "email": ""
   }
 ]

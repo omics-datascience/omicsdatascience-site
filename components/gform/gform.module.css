@@ -1,0 +1,11 @@
+.frameContainer {
+  height: 100%;
+}
+.frame {
+  align-self: center;
+  display: flex;
+  overflow: visible;
+  width: 100%;
+  border: none;
+  overflow: hidden;
+}
