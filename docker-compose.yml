@@ -2,7 +2,7 @@ version: "3"
 services:
   web:
     container_name: omicsdatascienceweb
-    image: omicsdatascience-site
+    image: omicsdatascience/omicsdatascience-site
     build: .
     ports:
       - 3000:3000
