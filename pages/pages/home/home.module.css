@@ -1,10 +1,11 @@
 .firstContainer {
-  background-color: black;
+  background-color: #1b1c1d;
   color: white;
   color: "#fff";
   width: "100%";
   max-width: "100%";
-  padding-top: 30px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
   margin-left: 0px;
   margin-right: 0px;
 }

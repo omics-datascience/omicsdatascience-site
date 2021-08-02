@@ -73,13 +73,12 @@ export default function IndexPage() {
                 <Image
                   src="/underconstruction.svg"
                   alt="Under Construction"
-                  width={60}
-                  height={50}
+                  width={70}
+                  height={70}
                   layout="fixed"
                   className={styles.underconstructionImage}
                   title="Under Construction"
                 />
-                Omics Data Science
               </Typography>
             </div>
           </Container>
