@@ -2,5 +2,6 @@
   "env": {
     "node": true
   },
-  "extends": ["next", "next/core-web-vitals", "prettier", "eslint:recommended"]
+  "extends": ["next", "next/core-web-vitals", "prettier", "eslint:recommended"],
+  "ignorePatterns": ["pages/_app.tsx", "**/_document.tsx"]
 }
