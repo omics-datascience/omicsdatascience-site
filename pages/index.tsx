@@ -76,7 +76,6 @@ export default function IndexPage() {
                   width={70}
                   height={70}
                   layout="fixed"
-                  className={styles.underconstructionImage}
                   title="Under Construction"
                 />
               </Typography>
