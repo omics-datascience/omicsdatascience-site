@@ -1,13 +1,7 @@
 import { Box, Container, Grid, Typography } from "@material-ui/core";
-import VideoCards from "../videoCards/videoCards";
+import Multiomix from "../../multiomix/multiomix";
+import Bioplat from "../bioplat/bioplat";
 import styles from "./home.module.css";
-
-/* const CarouselComponent = dynamic(
-  () => import("../../../components/carousel/carousel"),
-  { ssr: false }
-); */
-
-//const images = ["/mult1.png", "/mult2.png", "/mult3.png"];
 
 export default function Home() {
   return (
@@ -25,7 +19,8 @@ export default function Home() {
         </Grid>
       </Container>
       <Container className={styles.secondContainer}>
-        <VideoCards />
+        <Bioplat />
+        <Multiomix />
       </Container>
     </Box>
   );

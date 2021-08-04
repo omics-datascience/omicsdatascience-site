@@ -1,0 +1,19 @@
+.divider {
+  margin: 0px !important;
+}
+
+.text {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  font-size: 17px !important;
+}
+
+.container {
+  max-width: 200px !important;
+}
+
+.label {
+  font-size: 17px !important;
+  text-transform: none !important;
+  letter-spacing: 0px !important;
+}
