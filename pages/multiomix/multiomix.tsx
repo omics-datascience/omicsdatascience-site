@@ -8,7 +8,6 @@ import {
   Grid,
   Typography,
 } from "@material-ui/core";
-import NavigationIcon from "@material-ui/icons/Navigation";
 import styles from "./multiomix.module.css";
 import dynamic from "next/dynamic";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
