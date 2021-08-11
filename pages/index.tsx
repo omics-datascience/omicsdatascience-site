@@ -111,7 +111,7 @@ export default function IndexPage() {
         </div>
       </SwipeableDrawer>
 
-      <Container maxWidth={true} className={styles.mainContainer}>
+      <Container maxWidth={false} className={styles.mainContainer}>
         {pages[selectedItem].page}
       </Container>
 
