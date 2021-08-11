@@ -1,0 +1,35 @@
+.imageModalStyle {
+  transform: translate(top, left) !important;
+  width: 70% !important;
+  height: 70% !important;
+  position: absolute !important;
+  box-shadow: 50px !important;
+  border: 10px !important;
+  border-color: black !important;
+}
+
+.size {
+  top: 33% !important;
+  left: 13% !important;
+}
+
+@media (max-width: 400) {
+  .size {
+    top: 50% !important;
+    left: 13% !important;
+  }
+}
+
+@media (max-width: 900) {
+  .size {
+    top: 33% !important;
+    left: 13% !important;
+  }
+}
+
+@media (max-width: 1200) {
+  .size {
+    top: 33% !important;
+    left: 13% !important;
+  }
+}
