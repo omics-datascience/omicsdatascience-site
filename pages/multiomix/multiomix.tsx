@@ -1,12 +1,24 @@
-import { Container, Divider, Fab, Grid, Typography } from "@material-ui/core";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Container,
+  Divider,
+  Fab,
+  Grid,
+  Typography,
+} from "@material-ui/core";
 import NavigationIcon from "@material-ui/icons/Navigation";
 import styles from "./multiomix.module.css";
 import dynamic from "next/dynamic";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import MultiomixVideos from "../pages/videoCards/MultiomixVideos";
 const CarouselComponent = dynamic(
   () => import("../../components/carousel/carousel"),
   { ssr: false }
 );
-const images = ["/mult1.png", "/mult2.png", "/mult3.png"];
+
+const images = ["/img1.png", "/img2.png", "/img3.png", "/img4.png"];
 export default function Multiomix() {
   return (
     <Grid container spacing={3}>
@@ -15,6 +27,8 @@ export default function Multiomix() {
           Multiomix
         </Typography>
         <Divider variant="middle" className={styles.divider} />
+      </Grid>
+      <Grid item xs={6}>
         <Typography variant="body1" className={styles.text}>
           Multiomix is an interactive cloud-based platform that allows
           biologists to identify genetic and epigenetic events associated with
@@ -29,22 +43,43 @@ export default function Multiomix() {
           genome, the predicted sequence based interactions (e.g., miRNA-mRNA),
           and their associated prognostic values.
         </Typography>
+      </Grid>
+      <Grid item xs={6}>
+        <CarouselComponent items={images} />
+      </Grid>
+      <Grid item xs={12}>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+            className={styles.accordionSummary}
+          >
+            <Typography variant="h5">Videos</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <MultiomixVideos />
+          </AccordionDetails>
+        </Accordion>
+      </Grid>
+      <Grid item xs={12}>
         <Container fixed className={styles.container}>
           <a
             href="http://www.multiomix.org"
             rel="noopener noreferrer"
-            target="_blank  "
+            target="_blank"
           >
-            <Fab variant="extended" size="medium" className={styles.label}>
-              <NavigationIcon />
+            <Fab
+              variant="extended"
+              size="medium"
+              color="primary"
+              className={styles.label}
+            >
               Learn more!
             </Fab>
           </a>
         </Container>
       </Grid>
-      <Grid item xs={12}></Grid>
-      <CarouselComponent items={images} />
-      <Grid item xs={12}></Grid>
     </Grid>
   );
 }

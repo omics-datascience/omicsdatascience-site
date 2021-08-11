@@ -1,5 +1,5 @@
 import { Divider, Grid, Typography } from "@material-ui/core";
-import VideoCards from "../videoCards/videoCards";
+import BioplatVideos from "../videoCards/BioplatVideos";
 import styles from "./bioplat.module.css";
 export default function Bioplat() {
   return (
@@ -11,7 +11,7 @@ export default function Bioplat() {
         <Divider variant="middle" className={styles.divider} />
       </Grid>
       <Grid item xs={12}>
-        <VideoCards />
+        <BioplatVideos />
       </Grid>
     </Grid>
   );

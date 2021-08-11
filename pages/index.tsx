@@ -12,6 +12,8 @@ import {
   Toolbar,
   Typography,
   Container,
+  Grid,
+  Divider,
 } from "@material-ui/core";
 import {
   SwipeableDrawer,
@@ -54,7 +56,7 @@ export default function IndexPage() {
       <Head>
         <title>Omics Data Science</title>
         <meta name="description" content="Omics Data Science" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/multiomix.png" />
       </Head>
 
       <AppBar className={styles.appbar} position="sticky">
@@ -67,18 +69,16 @@ export default function IndexPage() {
           >
             <MenuIcon />
           </IconButton>
-          <Container>
+          <Container fixed className={styles.logoContainer}>
             <div>
-              <Typography component="h2" variant="h4" align="center">
-                <Image
-                  src="/underconstruction.svg"
-                  alt="Under Construction"
-                  width={70}
-                  height={70}
-                  layout="fixed"
-                  title="Under Construction"
-                />
-              </Typography>
+              <Image
+                src="/multiomix.png"
+                alt="Under Construction"
+                width={100}
+                height={60}
+                title="Under Construction"
+                quality={100}
+              />
             </div>
           </Container>
         </Toolbar>
@@ -111,21 +111,29 @@ export default function IndexPage() {
         </div>
       </SwipeableDrawer>
 
-      <Container maxWidth={false} className={styles.main}>
+      <Container maxWidth={true} className={styles.mainContainer}>
         {pages[selectedItem].page}
       </Container>
 
       <footer className={styles.footer}>
-        <div>
-          <span className={styles.logo}>
-            <Image src="/cc.svg" alt="Vercel Logo" width={50} height={50} />
-          </span>
-        </div>
-        <div>
-          <Typography gutterBottom variant="h5" component="h3">
-            Creative Commons
-          </Typography>
-        </div>
+        <Grid container alignItems="center" justify="center">
+          <div>
+            <span className={styles.logo}>
+              <Image src="/cc.svg" alt="Vercel Logo" width={20} height={20} />
+            </span>
+          </div>
+          <div>
+            <Typography gutterBottom className={styles.footerText}>
+              Creative Commons
+            </Typography>
+          </div>
+          <Divider orientation="vertical" flexItem className={styles.divider} />
+          <div>
+            <Typography gutterBottom className={styles.footerText}>
+              OmicsDataScience
+            </Typography>
+          </div>
+        </Grid>
       </footer>
     </div>
   );

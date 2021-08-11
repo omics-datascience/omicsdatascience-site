@@ -7,7 +7,7 @@
   margin-left: 0px;
   margin-right: 0px;
 }
-.main {
+.mainContainer {
   padding: 0 !important;
   margin: 0;
   min-height: 100%;
@@ -24,6 +24,7 @@
   margin-top: 5px;
   padding-top: 10px;
   height: 50px;
+  background-color: #1b1c1d;
 }
 
 .logo {
@@ -45,4 +46,27 @@
 .list {
   width: 250px;
   margin-top: 90px;
+}
+
+.logoContainer {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.footerText {
+  size: 20px;
+  padding-top: 5px;
+  color: #eaeaea;
+}
+
+.divider {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  color: #eaeaea !important;
+  background-color: #eaeaea !important;
+}
+
+.headGrid {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }

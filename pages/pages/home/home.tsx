@@ -19,8 +19,8 @@ export default function Home() {
         </Grid>
       </Container>
       <Container className={styles.secondContainer}>
-        <Bioplat />
         <Multiomix />
+        <Bioplat />
       </Container>
     </Box>
   );
