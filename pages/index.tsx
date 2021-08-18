@@ -13,7 +13,7 @@ import {
   Typography,
   Container,
   Grid,
-  Divider,
+  Box,
 } from "@material-ui/core";
 import {
   SwipeableDrawer,
@@ -60,8 +60,9 @@ export default function IndexPage() {
       </Head>
 
       <AppBar className={styles.appbar} position="sticky">
-        <Toolbar className={styles.toolbar}>
+        <Toolbar className={styles.toolbar} variant="dense">
           <IconButton
+            className={styles.menuHamburguer}
             edge="start"
             onClick={toggleFunction(!drawerOpen)}
             color="inherit"
@@ -69,18 +70,33 @@ export default function IndexPage() {
           >
             <MenuIcon />
           </IconButton>
-          <Container fixed className={styles.logoContainer}>
+          <Container className={styles.logoContainer}>
             <div>
               <Image
                 src="/multiomix.png"
-                alt="Under Construction"
-                width={100}
-                height={60}
-                title="Under Construction"
+                alt="Omics DataScience"
+                width={70}
+                height={40}
+                title="Omics DataScience"
                 quality={100}
               />
             </div>
           </Container>
+          <Box className={styles.toolbarElementsContainer}>
+            {pages.map((item, index) => (
+              <ListItem
+                button
+                key={item.name}
+                onClick={() => setSelectedItem(index)}
+                className={styles.toolbarElement}
+              >
+                <ListItemIcon className={styles.iconColor}>
+                  {item.icon}
+                </ListItemIcon>
+                <ListItemText primary={item.name} />
+              </ListItem>
+            ))}
+          </Box>
         </Toolbar>
       </AppBar>
       <SwipeableDrawer

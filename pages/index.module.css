@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+
   margin-left: 0px;
   margin-right: 0px;
 }
@@ -41,6 +42,8 @@
 
 .toolbar {
   background-color: #1b1c1d;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
 }
 
 .list {
@@ -50,7 +53,13 @@
 
 .logoContainer {
   display: flex !important;
-  justify-content: center !important;
+  justify-content: left !important;
+  min-width: 70px !important;
+  min-height: 40px !important;
+  max-width: 100px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  margin: 0px !important;
 }
 
 .footerText {
@@ -69,4 +78,29 @@
 .headGrid {
   padding-left: 0px !important;
   padding-right: 0px !important;
+}
+
+.toolbarElement {
+  padding: 0px !important;
+}
+
+@media (min-width: 800px) {
+  .toolbarElementsContainer {
+    max-width: 605px !important;
+    min-width: 605px !important;
+
+    display: flex !important;
+  }
+  .menuHamburguer {
+    display: none !important;
+  }
+}
+@media (max-width: 800px) {
+  .toolbarElementsContainer {
+    display: none;
+  }
+}
+.iconColor {
+  color: #eaeaea !important;
+  min-width: 30px !important;
 }

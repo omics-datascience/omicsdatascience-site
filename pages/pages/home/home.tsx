@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Box>
       <Container className={styles.firstContainer} maxWidth={false}>
-        <Grid container spacing={2}>
+        <Grid container>
           <Grid item xs={12} md={12}>
             <Typography variant="h1" align="center" paragraph>
               Omics Data Science
