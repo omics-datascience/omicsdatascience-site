@@ -54,7 +54,7 @@ export default function Multiomix() {
             id="panel1a-header"
             className={styles.accordionSummary}
           >
-            <Typography variant="h5">Videos</Typography>
+            <Typography variant="h5">Tutorial Videos</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <MultiomixVideos />
