@@ -26,7 +26,7 @@ export default function CarouselComponent(props: any) {
 
   return (
     <Container>
-      <Carousel navButtonsAlwaysInvisible={false} autoPlay={false}>
+      <Carousel navButtonsAlwaysInvisible={false}>
         {props.items.map((item: string, i: number) => (
           <div key={i}>
             <Item key={i} item={item} />
