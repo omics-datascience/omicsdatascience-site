@@ -126,7 +126,7 @@ function renderInstitutions() {
             className={styles.institution}
             gutterBottom={false}
           >
-            CAETI - Universidad Abierta Interamericana
+            CAETI - Open Interamerican University - UAI
           </Typography>
         </ListItem>
         <ListItem>
