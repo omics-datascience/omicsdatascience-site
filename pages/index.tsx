@@ -124,13 +124,7 @@ export default function IndexPage() {
           </div>
           <div>
             <Typography gutterBottom className={styles.footerText}>
-              Creative Commons
-            </Typography>
-          </div>
-          <Divider orientation="vertical" flexItem className={styles.divider} />
-          <div>
-            <Typography gutterBottom className={styles.footerText}>
-              OmicsDataScience
+              Creative Commons | OmicsDataScience
             </Typography>
           </div>
         </Grid>
