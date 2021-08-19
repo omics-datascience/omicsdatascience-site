@@ -16,8 +16,13 @@ const CarouselComponent = dynamic(
   () => import("../../components/carousel/carousel"),
   { ssr: false }
 );
-
-const images = ["/img1.png", "/img2.png", "/img3.png", "/img4.png"];
+import img1 from "/public/img1.png";
+import img2 from "/public/img2.png";
+import img3 from "/public/img3.png";
+import img4 from "/public/img4.png";
+import VideoCard from "../../components/videoCard/videoCard";
+import { getYouTubeEmbededUrl } from "../../utils/FormattingUtils";
+const images = [img1, img2, img3, img4];
 export default function Multiomix() {
   return (
     <Grid container spacing={3}>
@@ -47,6 +52,24 @@ export default function Multiomix() {
         <CarouselComponent items={images} />
       </Grid>
       <Grid item xs={12}>
+        <Typography gutterBottom variant="h4">
+          Tutorial Videos
+        </Typography>
+        <Divider variant="middle" className={styles.divider} />
+        <Grid container spacing={1} alignContent="center" justify="center">
+          <VideoCard
+            title="How to upload data?"
+            description="placeholder"
+            url={getYouTubeEmbededUrl("chvUbxkorXM")}
+          />
+          <VideoCard
+            title="How to share molecular datasets?"
+            description="placeholder"
+            url={getYouTubeEmbededUrl("nCx-N7jeoZU")}
+          />
+        </Grid>
+      </Grid>
+      <Grid item xs={12}>
         <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -54,7 +77,7 @@ export default function Multiomix() {
             id="panel1a-header"
             className={styles.accordionSummary}
           >
-            <Typography variant="h5">Tutorial Videos</Typography>
+            <Typography variant="h5">More Tutorial Videos</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <MultiomixVideos />

@@ -6,16 +6,6 @@ export default function MultiomixVideos() {
   return (
     <Grid container spacing={1} alignContent="center" justify="center">
       <VideoCard
-        title="How to upload data?"
-        description="placeholder"
-        url={getYouTubeEmbededUrl("chvUbxkorXM")}
-      />
-      <VideoCard
-        title="How to share molecular datasets?"
-        description="placeholder"
-        url={getYouTubeEmbededUrl("nCx-N7jeoZU")}
-      />
-      <VideoCard
         title="Interaction with cBioPortal"
         description="placeholder"
         url={getYouTubeEmbededUrl("Q7rgKWDxq0A")}
