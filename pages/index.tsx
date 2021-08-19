@@ -140,7 +140,7 @@ export default function IndexPage() {
           </div>
           <div>
             <Typography gutterBottom className={styles.footerText}>
-              Creative Commons | OmicsDataScience
+              Creative Commons | OmicsDataScience {new Date().getFullYear()}
             </Typography>
           </div>
         </Grid>
