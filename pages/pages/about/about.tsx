@@ -12,7 +12,6 @@ import {
   ListItemText,
   Typography,
 } from "@material-ui/core";
-import FaceIcon from "@material-ui/icons/Face";
 import React from "react";
 import styles from "./about.module.css";
 import TwitterIcon from "@material-ui/icons/Twitter";

@@ -2,8 +2,7 @@ import { Container, Divider, Grid, Typography } from "@material-ui/core";
 import { Document, Page, pdfjs } from "react-pdf";
 import GForm from "../../../components/gform/gform";
 import classes from "./references.module.css";
-import { useState } from "react";
-import workerSrc from "./pdfWorker";
+import workerSrc from "../../../pdfWorker";
 pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 import pdfConfig from "./pdfConfig.json";
 
