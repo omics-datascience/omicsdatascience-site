@@ -1,65 +1,72 @@
 [
   {
     "name": "Dr. MSc. Matias Butti",
-    "role": "Project Coordination",
-    "url": "https://www.researchgate.net/profile/Matias_Butti",
-    "urlText": "PubMed ResearchGate",
+    "role": "Director",
+    "url": "https://orcid.org/0000-0003-4841-8417",
+    "urlText": "orcid.org",
     "twitter": "",
-    "linkedin": "",
-    "email": "matias.butti@gemail.com"
+    "linkedin": "https://www.linkedin.com/in/matiasbutti",
+    "email": "matias.butti@gmail.com",
+    "image": "./butti.jpg"
   },
   {
     "name": "PhD Martín Abba",
-    "role": "Project Coordination",
-    "url": "http://www.ncbi.nlm.nih.gov/pubmed?term=Abba%20MC",
-    "urlText": "PubMed ResearchGate",
+    "role": "Director",
+    "url": "https://orcid.org/0000-0002-9206-2369",
+    "urlText": "orcid.org",
     "twitter": "",
     "linkedin": "",
-    "email": "mcabba@gemail.com"
+    "email": "mcabba@gmail.com",
+    "image": "./placeholder.png"
   },
   {
     "name": "Genaro Camele",
-    "role": "Main Contributor",
+    "role": "PhD student - Technical Leader",
+    "url": "https://orcid.org/0000-0001-6979-9103",
+    "urlText": "orcid.org",
+    "twitter": "",
+    "linkedin": "",
+    "email": "genarocamele@gmail.com",
+    "image": "./camele.png"
+  },
+  {
+    "name": "Dr. Sebastian Menazzi",
+    "role": "Codirector",
     "url": "",
     "urlText": "",
     "twitter": "",
-    "linkedin": "",
-    "email": "genarocamele@gemail.com"
+    "linkedin": "https://www.linkedin.com/in/sebastian-menazzi-043125b2/",
+    "email": "",
+    "image": "./menazzi.jpg"
   },
   {
-    "name": "Esp. Hernán Chanfreau",
-    "role": "Collaborator",
-    "url": "",
-    "urlText": "",
-    "twitter": "",
-    "linkedin": "",
-    "email": ""
-  },
-  {
-    "name": "Dr. Sebastián Menazzi",
-    "role": "Collaborator",
-    "url": "",
-    "urlText": "",
-    "twitter": "",
-    "linkedin": "",
-    "email": ""
-  },
-  {
-    "name": "St. Agustín Marraco",
-    "role": "Collaborator",
+    "name": "Agustín Marraco",
+    "role": "Researcher",
     "url": "",
     "urlText": "",
     "twitter": "https://twitter.com/agusmarraco",
     "linkedin": "https://ar.linkedin.com/in/agustin-daniel-marraco",
-    "email": "marraco.agustin@gemail.com"
+    "email": "marraco.agustin@gmail.com",
+    "image": "./marraco.jpeg"
   },
   {
-    "name": "PhD. Waldo Hasperué",
-    "role": "Collaborator",
-    "url": "",
+    "name": "Julián Muhlberger",
+    "role": "Researcher",
+    "url": "https://gitlab.com/linuxpizzacats",
+    "urlText": "Gitlab",
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/in/linuxpizzacats",
+    "email": "julian@comunidadtix.net.ar",
+    "image": "./juli.png"
+  },
+  {
+    "name": "Ramiro Federico Lasorsa",
+    "role": "Fellow student",
+    "url": "https://gitlab.com/linuxpizzacats",
     "urlText": "",
     "twitter": "",
-    "linkedin": "",
-    "email": ""
+    "linkedin": "https://www.linkedin.com/in/ramiro-lasorsa-5ba99218a/",
+    "email": "",
+    "image": "./placeholder.png"
   }
 ]

@@ -21,6 +21,7 @@ import EmailIcon from "@material-ui/icons/Mail";
 import BookIcon from "@material-ui/icons/Book";
 import BusinessIcon from "@material-ui/icons/Business";
 import team from "./team.json";
+import Avatar from "@material-ui/core/Avatar";
 
 export default function About() {
   return (
@@ -43,13 +44,14 @@ function renderTeam(team: any) {
   team.forEach((member: any) => {
     members.push(
       <React.Fragment>
-        <Grid item xs={6} md={4}>
+        <Grid item xs={6} md={4} className={styles.cardContainer}>
           <CardContent className={styles.cardContent}>
-            <ListItem alignItems="flex-start">
+            <ListItem alignItems="center" dense={true}>
               <ListItemAvatar>
-                <FaceIcon></FaceIcon>
+                <Avatar src={member.image} className={styles.avatar} />
               </ListItemAvatar>
               <ListItemText
+                className={styles.text}
                 primary={member.name}
                 secondary={
                   <React.Fragment>
