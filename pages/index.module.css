@@ -82,13 +82,15 @@
 
 .toolbarElement {
   padding: 0px !important;
+  padding-right: 10px !important;
+  margin-left: 5px !important;
+  width: 100% !important;
+  justify-content: center;
 }
 
 @media (min-width: 800px) {
   .toolbarElementsContainer {
     max-width: 605px !important;
-    min-width: 605px !important;
-
     display: flex !important;
   }
   .menuHamburguer {
@@ -103,4 +105,5 @@
 .iconColor {
   color: #eaeaea !important;
   min-width: 30px !important;
+  margin-left: 0px !important;
 }

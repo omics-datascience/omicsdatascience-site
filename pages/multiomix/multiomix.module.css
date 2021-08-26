@@ -17,8 +17,11 @@
   text-transform: none !important;
   letter-spacing: 0px !important;
   color: white !important;
+  white-space: nowrap;
 }
 
-.accordionSummary {
-  background-color: rgb(245, 245, 245) !important;
+.gridcontainer {
+  justify-content: center !important;
+  margin: 0px !important;
+  padding: 0px !important;
 }

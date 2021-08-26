@@ -2,6 +2,7 @@ import {
   Accordion,
   AccordionDetails,
   AccordionSummary,
+  Button,
   Container,
   Divider,
   Fab,
@@ -32,7 +33,7 @@ export default function Multiomix() {
         </Typography>
         <Divider variant="middle" className={styles.divider} />
       </Grid>
-      <Grid item xs={6}>
+      <Grid item lg={6}>
         <Typography variant="body1" className={styles.text}>
           Multiomix is an interactive cloud-based platform that allows
           biologists to identify genetic and epigenetic events associated with
@@ -48,8 +49,21 @@ export default function Multiomix() {
           and their associated prognostic values.
         </Typography>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item lg={6} xs={12}>
         <CarouselComponent items={images} />
+      </Grid>
+      <Grid item xs={12}>
+        <Container fixed className={styles.container}>
+          <Button
+            variant="contained"
+            color="primary"
+            href="http://www.multiomix.org"
+            target="_blank"
+            className={styles.label}
+          >
+            Access Multiomix
+          </Button>
+        </Container>
       </Grid>
       <Grid item xs={12}>
         <Typography gutterBottom variant="h4">
@@ -83,24 +97,6 @@ export default function Multiomix() {
             <MultiomixVideos />
           </AccordionDetails>
         </Accordion>
-      </Grid>
-      <Grid item xs={12}>
-        <Container fixed className={styles.container}>
-          <a
-            href="http://www.multiomix.org"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <Fab
-              variant="extended"
-              size="medium"
-              color="primary"
-              className={styles.label}
-            >
-              Learn more!
-            </Fab>
-          </a>
-        </Container>
       </Grid>
     </Grid>
   );

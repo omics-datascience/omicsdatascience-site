@@ -1,0 +1,11 @@
+.icon {
+  color: white;
+  background-color: black;
+}
+
+.pageContainer {
+  margin-top: 10px;
+}
+.pdfContainer {
+  float: left;
+}

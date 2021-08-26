@@ -27,13 +27,13 @@ import { useState } from "react";
 import About from "./pages/about/about";
 import Home from "./pages/home/home";
 import GetAccess from "./pages/getaccess/getaccess";
-import Support from "./pages/support/support";
+import References from "./pages/support/references";
 
 const pages = [
   { name: "Home", page: <Home />, icon: <HomeIcon /> },
-  { name: "About us", page: <About />, icon: <DuplicateIcon /> },
-  { name: "Get access", page: <GetAccess />, icon: <AccessIcon /> },
-  { name: "Support", page: <Support />, icon: <HelpIcon /> },
+  { name: "About\u00A0us", page: <About />, icon: <DuplicateIcon /> },
+  { name: "Get\u00A0access", page: <GetAccess />, icon: <AccessIcon /> },
+  { name: "References", page: <References />, icon: <HelpIcon /> },
 ];
 export default function IndexPage() {
   const [selectedItem, setSelectedItem] = useState(0);
