@@ -2,7 +2,8 @@ import { Modal } from "@material-ui/core";
 import Image from "next/image";
 import styles from "./imageModal.module.css";
 interface props {
-  source: string;
+  // eslint-disable-next-line no-undef
+  source: StaticImageData;
   trigger: Function;
   open: boolean;
 }
@@ -20,7 +21,9 @@ export default function ImageModal(props: props) {
         layout="responsive"
         height={15}
         width={25}
+        quality={70}
         alt=""
+        priority={true}
       />
     </Modal>
   );

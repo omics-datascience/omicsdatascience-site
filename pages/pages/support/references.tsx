@@ -1,7 +1,6 @@
 import { Container, Divider, Grid, Typography } from "@material-ui/core";
 import { Document, Page, pdfjs } from "react-pdf";
-import GForm from "../../../components/gform/gform";
-import classes from "./references.module.css";
+import styles from "./references.module.css";
 import workerSrc from "../../../pdfWorker";
 pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 import pdfConfig from "./pdfConfig.json";
@@ -18,11 +17,11 @@ function renderPdfs() {
     pdfs.push(
       <Grid item lg={5}>
         <a href={item.path} download>
-          <Document file={item.path} className={classes.pdfContainer}>
+          <Document file={item.path} className={styles.pdfContainer}>
             <Page width={150} pageNumber={1} />
           </Document>
         </a>
-        <Typography variant="body1" className={classes.text}>
+        <Typography variant="body1" className={styles.text}>
           {item.text}
         </Typography>
       </Grid>
@@ -32,28 +31,16 @@ function renderPdfs() {
 }
 export default function References() {
   return (
-    <Container className={classes.pageContainer}>
+    <Container className={styles.pageContainer}>
       <Grid container spacing={1}>
         <Grid item xs={12}>
           <Typography gutterBottom variant="h4">
             References
           </Typography>
-          <Divider variant="middle" className={classes.divider} />
+          <Divider variant="middle" className={styles.divider} />
         </Grid>
         {renderPdfs()}
 
-        <Grid item xs={12}>
-          <Typography gutterBottom variant="h4">
-            Want to ask a question?
-          </Typography>
-          <Divider variant="middle" className={classes.divider} />
-        </Grid>
-        <Grid sm={12}>
-          <GForm
-            url="https://docs.google.com/forms/d/e/1FAIpQLSdA-HYyGAk21mqFCmEfaJd3ipDI8pBCB1vIybynP1f3fQf3jg/viewform?embedded=true"
-            height={770}
-          />
-        </Grid>
       </Grid>
     </Container>
   );

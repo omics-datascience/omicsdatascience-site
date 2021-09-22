@@ -1,7 +1,8 @@
-import { Box, Container, Grid, Typography } from "@material-ui/core";
+import { Box, Container, Grid } from "@material-ui/core";
 import Multiomix from "../../multiomix/multiomix";
 import Bioplat from "../bioplat/bioplat";
 import styles from "./home.module.css";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -9,12 +10,16 @@ export default function Home() {
       <Container className={styles.firstContainer} maxWidth={false}>
         <Grid container>
           <Grid item xs={12} md={12}>
-            <Typography variant="h1" align="center" paragraph>
-              Omics Data Science
-            </Typography>
-            <Typography variant="h6" align="center" paragraph>
-              A &quot;Gene expression Biomarker&quot; discovery Research group
-            </Typography>
+            <div style={{ justifyContent: "center", display: "flex" }}>
+              <Image
+                src="/banner.svg"
+                alt="Omics DataScience"
+                width={1500}
+                height={300}
+                title="Omics DataScience"
+                quality={100}  priority={true}
+              />
+            </div>
           </Grid>
         </Grid>
       </Container>

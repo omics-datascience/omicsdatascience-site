@@ -4,8 +4,8 @@ import styles from "./index.module.css";
 import React from "react";
 import HomeIcon from "@material-ui/icons/Home";
 import DuplicateIcon from "@material-ui/icons/Info";
-import AccessIcon from "@material-ui/icons/VpnKey";
 import HelpIcon from "@material-ui/icons/Help";
+import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import {
   IconButton,
   AppBar,
@@ -32,8 +32,9 @@ import References from "./pages/support/references";
 const pages = [
   { name: "Home", page: <Home />, icon: <HomeIcon /> },
   { name: "About\u00A0us", page: <About />, icon: <DuplicateIcon /> },
-  { name: "Get\u00A0access", page: <GetAccess />, icon: <AccessIcon /> },
-  { name: "References", page: <References />, icon: <HelpIcon /> },
+  { name: "References", page: <References />, icon: <LibraryBooksIcon /> },
+  { name: "Contact\u00A0us", page: <GetAccess />, icon: <HelpIcon /> },
+
 ];
 export default function IndexPage() {
   const [selectedItem, setSelectedItem] = useState(0);
@@ -56,7 +57,7 @@ export default function IndexPage() {
       <Head>
         <title>Omics Data Science</title>
         <meta name="description" content="Omics Data Science" />
-        <link rel="icon" href="/multiomix.png" />
+        <link rel="icon" href="/logo2.svg" />
       </Head>
 
       <AppBar className={styles.appbar} position="sticky">
@@ -73,12 +74,12 @@ export default function IndexPage() {
           <Container className={styles.logoContainer}>
             <div>
               <Image
-                src="/multiomix.png"
+                src="/logo.svg"
                 alt="Omics DataScience"
-                width={70}
-                height={40}
+                width={120}
+                height={100}
                 title="Omics DataScience"
-                quality={100}
+                quality={100} priority={true}
               />
             </div>
           </Container>
@@ -135,7 +136,7 @@ export default function IndexPage() {
         <Grid container alignItems="center" justify="center">
           <div>
             <span className={styles.logo}>
-              <Image src="/cc.svg" alt="Vercel Logo" width={20} height={20} />
+              <Image src="/cc.svg" alt="Vercel Logo" width={20} height={20}   priority={true}/>
             </span>
           </div>
           <div>

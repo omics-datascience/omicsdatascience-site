@@ -55,7 +55,6 @@ export default function Multiomix() {
         <Container fixed className={styles.container}>
           <Button
             variant="contained"
-            color="primary"
             href="http://www.multiomix.org"
             target="_blank"
             className={styles.label}
