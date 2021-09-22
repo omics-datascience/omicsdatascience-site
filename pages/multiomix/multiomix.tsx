@@ -16,13 +16,8 @@ const CarouselComponent = dynamic(
   () => import("../../components/carousel/carousel"),
   { ssr: false }
 );
-import img1 from "/public/img1.png";
-import img2 from "/public/img2.png";
-import img3 from "/public/img3.png";
-import img4 from "/public/img4.png";
 import VideoCard from "../../components/videoCard/videoCard";
 import { getYouTubeEmbededUrl } from "../../utils/FormattingUtils";
-const images = [img1, img2, img3, img4];
 export default function Multiomix() {
   return (
     <Grid container spacing={3}>
@@ -49,7 +44,7 @@ export default function Multiomix() {
         </Typography>
       </Grid>
       <Grid item lg={6} xs={12}>
-        <CarouselComponent items={images} />
+        <CarouselComponent />
       </Grid>
       <Grid item xs={12}>
         <Container fixed className={styles.container}>
