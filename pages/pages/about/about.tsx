@@ -77,9 +77,9 @@ function renderTeam(team: any) {
                 </a>
               </IconButton>
             ) : null}
-            {member.mail != "" ? (
+            {member.email != "" ? (
               <IconButton>
-                <a href={"mailto:" + member.mail} target="blank">
+                <a href={"mailto:" + member.email} target="blank">
                   <EmailIcon titleAccess="Email" />
                 </a>
               </IconButton>
