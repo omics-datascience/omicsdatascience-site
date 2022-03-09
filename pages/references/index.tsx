@@ -1,7 +1,7 @@
 import { Container, Divider, Grid, Typography } from "@material-ui/core";
 import { Document, Page, pdfjs } from "react-pdf";
 import styles from "./references.module.css";
-import workerSrc from "../../../pdfWorker";
+import workerSrc from "../../pdfWorker";
 pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 import pdfConfig from "./pdfConfig.json";
 

@@ -1,9 +1,9 @@
 import { Container, Divider, Grid, Typography } from "@material-ui/core";
-import GForm from "../../../components/gform/gform";
-import styles from  '../getaccess/getaccess.module.css'
+import GForm from "../../components/gform/gform";
+
 export default function GetAccess() {
   return (
-    <Container className={styles.container} >
+    <Container>
       <Grid container spacing={1}>
       <Grid item xs={12}>
           <Typography gutterBottom variant="h4">

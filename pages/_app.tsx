@@ -1,11 +1,12 @@
-import { useEffect } from "react";
+//import { useEffect } from "react";
 import { AppProps } from "next/app";
-import { useRouter } from "next/router";
+//import { useRouter } from "next/router";
 import "../styles/globals.css";
+import { Header } from "../components/layout/header/header";
 
 let gtag: any;
 const App = ({ Component, pageProps }: AppProps) => {
-  const router = useRouter();
+  /*const router = useRouter();
 
   useEffect(() => {
     const handleRouteChange = (url: URL) => {
@@ -15,9 +16,12 @@ const App = ({ Component, pageProps }: AppProps) => {
     return () => {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
-  }, [router.events]);
+  }, [router.events]);*/
 
-  return <Component {...pageProps} />;
+  return <>
+    <Header/>
+    <Component {...pageProps} />;
+  </>
 };
 
 export default App;

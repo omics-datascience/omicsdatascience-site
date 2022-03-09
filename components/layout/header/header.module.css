@@ -1,0 +1,45 @@
+.logo {
+    height: 1em;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+  
+.appbar {
+    width: auto;
+    float: left;
+    z-index: 2000 !important;
+}
+
+.toolbar {
+    background-color: #1b1c1d;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+.toolbarElement {
+    padding: 0px !important;
+    padding-right: 10px !important;
+    margin-left: 5px !important;
+    width: 100% !important;
+    justify-content: center;
+  }
+  
+  @media (min-width: 800px) {
+    .toolbarElementsContainer {
+      max-width: 605px !important;
+      display: flex !important;
+    }
+    .menuHamburguer {
+      display: none !important;
+    }
+  }
+  @media (max-width: 800px) {
+    .toolbarElementsContainer {
+      display: none;
+    }
+  }
+  .iconColor {
+    color: #eaeaea !important;
+    min-width: 30px !important;
+    margin-left: 0px !important;
+  }
