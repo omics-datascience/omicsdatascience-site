@@ -19,7 +19,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Install tools
-        run: apt install jq -y
+        run: sudo apt-get install jq -y
       - name: Get version for tagging
         run: BASEDIR=$(pwd) ./tools/get_version.sh >> $GITHUB_ENV            
       - name: Build and push
@@ -36,7 +36,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install tools
-        run: apt install jq -y        
+        run: sudo apt-get install jq -y       
       - name: Get version for tagging
         run: BASEDIR=$(pwd) ./tools/get_version.sh >> $GITHUB_ENV            
       - name: Create and push tag
