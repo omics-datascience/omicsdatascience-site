@@ -55,18 +55,28 @@
     "url": "https://gitlab.com/linuxpizzacats",
     "urlText": "Gitlab",
     "twitter": "",
-    "linkedin": "https://www.linkedin.com/in/linuxpizzacats",
-    "email": "julian@comunidadtix.net.ar",
+    "linkedin": "https://www.linkedin.com/in/julian-muhlberger/",
+    "email": "",
     "image": "./juli.png"
   },
   {
     "name": "Ramiro Federico Lasorsa",
     "role": "Fellow student",
-    "url": "https://gitlab.com/linuxpizzacats",
+    "url": "",
     "urlText": "",
     "twitter": "",
     "linkedin": "https://www.linkedin.com/in/ramiro-lasorsa-5ba99218a/",
     "email": "",
     "image": "./rama.jpg"
-  }
+  },
+  {
+    "name": "Mauricio Brunner",
+    "role": "Researcher",
+    "url": "Github",
+    "urlText": "https://github.com/mauri101-Ar",
+    "twitter": "https://x.com/MauriBrunner",
+    "linkedin": "https://www.linkedin.com/in/mauricio-brunner/",
+    "email": "mauribrunner@gmail.com",
+    "image": "./mauri.jpg"
+  } 
 ]
