@@ -78,5 +78,15 @@
     "linkedin": "https://www.linkedin.com/in/mauricio-brunner/",
     "email": "mauribrunner@gmail.com",
     "image": "./mauri.jpg"
-  } 
+  },
+  {
+    "name": "Franco Bebczuk",
+    "role": "Researcher",
+    "url": "Github",
+    "urlText": "https://github.com/franbeb",
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/in/francobebczuk/",
+    "email": "",
+    "image": "./fran.jpeg"
+  }
 ]
