@@ -88,5 +88,15 @@
     "linkedin": "https://www.linkedin.com/in/francobebczuk/",
     "email": "",
     "image": "./fran.jpeg"
+  },
+  {
+    "name": " Juan Herrera Delvalle",
+    "role": "Researcher",
+    "url": "Github",
+    "urlText": "https://github.com/juanNH",
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/in/juannherrerad/",
+    "email": "",
+    "image": "./juan.jpeg"
   }
 ]
